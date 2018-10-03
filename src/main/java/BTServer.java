@@ -22,7 +22,7 @@ public class BTServer {
         String sharedFile = "/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Server/torrent/250.rar";
 
         try {
-            Tracker tracker = new Tracker( InetAddress.getByName("157.252.205.60") );
+            Tracker tracker = new Tracker( InetAddress.getByName("157.253.205.60") );
             tracker.start();
             System.out.println("Tracker running.");
 
