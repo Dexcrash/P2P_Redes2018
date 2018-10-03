@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BitTorrentGradle:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/BitTorrentGradle_jar2</output-path>
+    <root id="archive" name="BitTorrentGradle.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/client/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="BitTorrentGradle_main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple/4.1.21/3464b9fb0221d1a2593894f93278b0129025b4ba/simple-4.1.21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.turn/ttorrent-core/1.5/62924ff1de07866cd7dfcd81cac65c944f6ada86/ttorrent-core-1.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.6.1/58e59bfb3e247097b8122243b3bfe0049c8cfae8/slf4j-simple-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.4/2396d74b12b905f780ed7966738bb78438e8371a/slf4j-api-1.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
