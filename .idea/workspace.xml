@@ -7,7 +7,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a41eda25-ee3f-4b81-b2bb-50ffa9c7f269" name="Default Changelist" comment="" />
+    <list default="true" id="a41eda25-ee3f-4b81-b2bb-50ffa9c7f269" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/BTServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BTServer.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -88,7 +90,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -123,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/BTServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="256">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -538,9 +540,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BTServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/BTClient.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/BTServer.java" />
       </list>
     </option>
   </component>
@@ -689,12 +691,12 @@
       <updated>1538156721980</updated>
       <workItem from="1538156728368" duration="4022000" />
       <workItem from="1538487739281" duration="2885000" />
-      <workItem from="1538578801919" duration="1698000" />
+      <workItem from="1538578801919" duration="2396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8605000" />
+    <option name="totallyTimeSpent" value="9303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -779,16 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BTServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.turn/ttorrent-core/1.5/fcfef309d81d860e2379b63319e3a9120c8f60e0/ttorrent-core-1.5-sources.jar!/com/turn/ttorrent/tracker/Tracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -820,6 +812,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BTServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

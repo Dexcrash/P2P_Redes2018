@@ -54,8 +54,11 @@ public class BTServer {
             }
         };
 
-		//Directorio con torrents que quiere anunciar
-        for (File f : new File("C:\\torrent").listFiles(filter)) {
+
+        System.out.println(System.getProperty("user.dir"));
+        //Directorio con torrents que quiere anunciar
+        for (File f : new File("./torrent").listFiles(filter)) {
+
             tracker.announce(TrackedTorrent.load(f));
         }
 
