@@ -19,7 +19,7 @@ public class BTServer {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
 
 	//Codigo para crear torrent de un archivo
-        String sharedFile = "home/s6g4/250.rar";
+        String sharedFile = "/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Server/torrent/250.rar";
 
         try {
             Tracker tracker = new Tracker( InetAddress.getLocalHost() );
@@ -31,7 +31,7 @@ public class BTServer {
 
             System.out.println("save .torrent to file...");
 
-            FileOutputStream fos = new FileOutputStream("./torrent");
+            FileOutputStream fos = new FileOutputStream("/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Server/torrent");
             torrent.save( fos );
             fos.close();
 
