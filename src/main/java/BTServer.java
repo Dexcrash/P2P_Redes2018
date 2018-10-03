@@ -31,7 +31,7 @@ public class BTServer {
 
             System.out.println("save .torrent to file...");
 
-            FileOutputStream fos = new FileOutputStream("/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Server/torrent");
+            FileOutputStream fos = new FileOutputStream("/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Server/torrent/250.torrent");
             torrent.save( fos );
             fos.close();
 
