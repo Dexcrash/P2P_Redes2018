@@ -15,8 +15,9 @@ public class BTClient {
         Client client = new Client(
                 // This is the interface the client will listen on (you might need something
                 // else than localhost here).
-                InetAddress.getLocalHost(),
+                //InetAddress.getLocalHost(),
                 //InetAddress.getByAddress(new byte[]{0, 0, 0, 0}),
+                InetAddress.getLocalHost(),
 
                 // Load the torrent from the torrent file and use the given
                 // output directory. Partials downloads are automatically recovered.

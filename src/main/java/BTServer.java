@@ -19,7 +19,7 @@ public class BTServer {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
 
 	//Codigo para crear torrent de un archivo
-        /*String sharedFile = "C:\\Users\\juanp\\Desktop\\Pruebatr\\2.docx";
+        String sharedFile = "home/s6g4/250.rar";
 
         try {
             Tracker tracker = new Tracker( InetAddress.getLocalHost() );
@@ -31,7 +31,7 @@ public class BTServer {
 
             System.out.println("save .torrent to file...");
 
-            FileOutputStream fos = new FileOutputStream("C:\\torrent\\2.torrent");
+            FileOutputStream fos = new FileOutputStream("./torrent");
             torrent.save( fos );
             fos.close();
 
@@ -39,7 +39,7 @@ public class BTServer {
 
         } catch ( Exception e ) {
             e.printStackTrace();
-        }*/
+        }
 
         // First, instantiate a Tracker object with the port you want it to listen on.
 // The default tracker port recommended by the BitTorrent protocol is 6969.
@@ -53,6 +53,7 @@ public class BTServer {
                 return name.endsWith(".torrent");
             }
         };
+
 
 
         System.out.println(System.getProperty("user.dir"));
