@@ -1,9 +1,9 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="BitTorrentGradle:jar2">
-    <output-path>$PROJECT_DIR$/out/artifacts/BitTorrentGradle_jar2</output-path>
+  <artifact type="jar" name="Server">
+    <output-path>$PROJECT_DIR$/out/artifacts/Server</output-path>
     <root id="archive" name="BitTorrentGradle.jar">
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/client/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/server/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="BitTorrentGradle_main" />
       <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.simpleframework/simple/4.1.21/3464b9fb0221d1a2593894f93278b0129025b4ba/simple-4.1.21.jar" path-in-jar="/" />
