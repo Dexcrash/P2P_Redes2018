@@ -23,7 +23,7 @@ public class BTClient {
                 // output directory. Partials downloads are automatically recovered.
                 SharedTorrent.fromFile(
 				//Ruta torrent a descargar 
-                        new File("C:\\Users\\juanp\\Desktop\\pruebatr\\2.torrent"),
+                        new File("C:\\Users\\juanp\\Desktop\\pruebatr\\250.torrent"),
 				//Creo que ruta donde descarga (Parametro dice 'parentDirectory'
                         new File("C:\\Users\\juanp\\Desktop\\pruebatr")));
 
@@ -39,8 +39,8 @@ public class BTClient {
 // You can optionally set download/upload rate limits
 // in kB/second. Setting a limit to 0.0 disables rate
 // limits.
-        client.setMaxDownloadRate(50.0);
-        client.setMaxUploadRate(50.0);
+        client.setMaxDownloadRate(500.0);
+        client.setMaxUploadRate(500.0);
 
 // At this point, can you either call download() to download the torrent and
 // stop immediately after...
