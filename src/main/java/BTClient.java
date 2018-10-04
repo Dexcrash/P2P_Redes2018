@@ -33,14 +33,15 @@ public class BTClient {
                 Client client = (Client) observable;
                 float progress = client.getTorrent().getCompletion();
                 // Do something with progress.
+                System.out.println(progress);
             }
         });
 
 // You can optionally set download/upload rate limits
 // in kB/second. Setting a limit to 0.0 disables rate
 // limits.
-        client.setMaxDownloadRate(0);
-        client.setMaxUploadRate(0);
+        client.setMaxDownloadRate(0.0);
+        client.setMaxUploadRate(0.0);
 
 // At this point, can you either call download() to download the torrent and
 // stop immediately after...
