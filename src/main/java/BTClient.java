@@ -23,7 +23,7 @@ public class BTClient {
                 // output directory. Partials downloads are automatically recovered.
                 SharedTorrent.fromFile(
 				//Ruta torrent a descargar 
-                        new File("/home/s6g4/clientes/P2P_Redes2018/out/artifacts/Server/torrent/250.torrent"),
+                        new File("/home/s6g4/clientes/P2P_Redes2018/out/artifacts/Client/torrent/250.torrent"),
 				//Creo que ruta donde descarga (Parametro dice 'parentDirectory'
                         new File("/home/isis/clientes/P2P_Redes2018/out/artifacts/Client/torrent")));
 
