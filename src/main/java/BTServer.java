@@ -19,7 +19,7 @@ public class BTServer {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException {
 
 	//Codigo para crear torrent de un archivo
-        String sharedFile = "/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Server/torrent/250.rar";
+        /*String sharedFile = "/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Server/torrent/250.rar";
 
         try {
             Tracker tracker = new Tracker( InetAddress.getByName("157.253.205.60") );
@@ -40,10 +40,11 @@ public class BTServer {
         } catch ( Exception e ) {
             e.printStackTrace();
         }
-
+*/
         // First, instantiate a Tracker object with the port you want it to listen on.
 // The default tracker port recommended by the BitTorrent protocol is 6969.
-        Tracker tracker = new Tracker(new InetSocketAddress(6969));
+        //asd
+        Tracker tracker = new Tracker(new InetSocketAddress("157.253.205.60", 6969));
 
 // Then, for each torrent you wish to announce on this tracker, simply created
 // a TrackedTorrent object and pass it to the tracker.announce() method:

@@ -17,7 +17,7 @@ public class BTClient {
                 // else than localhost here).
                 //InetAddress.getLocalHost(),
                 //InetAddress.getByAddress(new byte[]{0, 0, 0, 0}),
-                InetAddress.getLocalHost(),
+                InetAddress.getByName("192.168.1.169"),
 
                 // Load the torrent from the torrent file and use the given
                 // output directory. Partials downloads are automatically recovered.
