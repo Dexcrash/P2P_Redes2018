@@ -51,8 +51,6 @@ public class BTClient {
         client.download();
 
 // Or call client.share(...) with a seed time in seconds:
-        long fin = System.currentTimeMillis();
-        System.out.println("Se termina de descargar en: " + (fin - init) + "\nComenzando a compartir");
 
         client.share(3600);
 // Which would seed the torrent for an hour after the download is complete.
@@ -60,6 +58,9 @@ public class BTClient {
 // Downloading and seeding is done in background threads.
 // To wait for this process to finish, call:
         client.waitForCompletion();
+
+        long fin = System.currentTimeMillis();
+        System.out.println("Se termina de descargar en: " + (fin - init) + "\nComenzando a compartir");
 
 // At any time you can call client.stop() to interrupt the download.
         //client.stop();
