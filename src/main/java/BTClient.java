@@ -27,15 +27,7 @@ public class BTClient {
 				//Creo que ruta donde descarga (Parametro dice 'parentDirectory'
                         new File("/home/isis/clientes/P2P_Redes2018/out/artifacts/Client/torrent")));
 
-        client.addObserver(new Observer() {
-            @Override
-            public void update(Observable observable, Object data) {
-                Client client = (Client) observable;
-                float progress = client.getTorrent().getCompletion();
-                // Do something with progress.
-                System.out.println(progress);
-            }
-        });
+
 
 // You can optionally set download/upload rate limits
 // in kB/second. Setting a limit to 0.0 disables rate
@@ -46,10 +38,24 @@ public class BTClient {
 // At this point, can you either call download() to download the torrent and
 // stop immediately after...
 
-        long init = System.currentTimeMillis();
+        final long init = System.currentTimeMillis();
         System.out.println("Inicia a descargar:");
 
         client.download();
+
+        client.addObserver(new Observer() {
+            @Override
+            public void update(Observable observable, Object data) {
+                Client client = (Client) observable;
+                float progress = client.getTorrent().getCompletion();
+                // Do something with progress.
+                if(progress >= 100)
+                {
+                    long fin = System.currentTimeMillis();
+                    System.out.println("Se termina de descargar en: " + (fin - init) + "\nComenzando a compartir");
+                }
+            }
+        });
 
 // Or call client.share(...) with a seed time in seconds:
 
@@ -60,8 +66,6 @@ public class BTClient {
 // To wait for this process to finish, call:
         client.waitForCompletion();
 
-        long fin = System.currentTimeMillis();
-        System.out.println("Se termina de descargar en: " + (fin - init) + "\nComenzando a compartir");
 
 // At any time you can call client.stop() to interrupt the download.
         //client.stop();
