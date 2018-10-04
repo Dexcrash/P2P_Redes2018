@@ -17,15 +17,15 @@ public class BTClient {
                 // else than localhost here).
                 //InetAddress.getLocalHost(),
                 //InetAddress.getByAddress(new byte[]{0, 0, 0, 0}),
-                InetAddress.getByName("192.168.1.169"),
+                InetAddress.getByName("172.23.66.61"),
 
                 // Load the torrent from the torrent file and use the given
                 // output directory. Partials downloads are automatically recovered.
                 SharedTorrent.fromFile(
 				//Ruta torrent a descargar 
-                        new File("C:\\Users\\juanp\\Desktop\\pruebatr\\250.torrent"),
+                        new File("/home/s6g4/clientes/P2P_Redes2018/out/artifacts/Server/torrent/250.torrent"),
 				//Creo que ruta donde descarga (Parametro dice 'parentDirectory'
-                        new File("C:\\Users\\juanp\\Desktop\\pruebatr")));
+                        new File("/home/isis/clientes/P2P_Redes2018/out/artifacts/Client/torrent")));
 
         client.addObserver(new Observer() {
             @Override
