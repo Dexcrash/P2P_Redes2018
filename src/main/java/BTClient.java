@@ -17,7 +17,7 @@ public class BTClient {
                 // else than localhost here).
                 //InetAddress.getLocalHost(),
                 //InetAddress.getByAddress(new byte[]{0, 0, 0, 0}),
-                InetAddress.getByName("172.23.66.61"),
+                InetAddress.getByName("172.23.66.63"),
 
                 // Load the torrent from the torrent file and use the given
                 // output directory. Partials downloads are automatically recovered.
@@ -59,7 +59,7 @@ public class BTClient {
                     try {
                         writer = new PrintWriter(new Date().toString() + ".txt", "UTF-8");
 
-                        writer.println("Cliente: 172.23.66.61" );
+                        writer.println("Cliente: 172.23.66.63" );
                         writer.println("Archivo: 250.rar");
                         writer.println("Fecha: " + new Date().toString());
                         writer.println("Tiempo: " + (fin - init));
