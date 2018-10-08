@@ -9,6 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a41eda25-ee3f-4b81-b2bb-50ffa9c7f269" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BTClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BTClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -85,13 +86,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="1004" />
+          <entry key="java" value="1006" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="1004" />
+          <entry key="JAVA" value="1006" />
         </counts>
       </usages-collector>
     </session>
@@ -147,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/BTClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+              <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1743#2291#0" expanded="true" />
@@ -604,7 +605,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538972315129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538972439629" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -666,12 +667,12 @@
       <workItem from="1538578801919" duration="9893000" />
       <workItem from="1538657630118" duration="6836000" />
       <workItem from="1538682790607" duration="3599000" />
-      <workItem from="1538966794127" duration="2988000" />
+      <workItem from="1538966794127" duration="3116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30223000" />
+    <option name="totallyTimeSpent" value="30351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -799,7 +800,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/BTClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1743#2291#0" expanded="true" />
