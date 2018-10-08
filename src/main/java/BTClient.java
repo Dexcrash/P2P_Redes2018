@@ -53,19 +53,24 @@ public class BTClient {
                 long init = 0;
                 if(progress >= 0 && !empezo) {
                     init = System.currentTimeMillis();
+                    System.out.println("Init: " + init);
                     empezo = true;
                 }
                 if(progress >= 100)
                 {
                     long fin = System.currentTimeMillis();
+                    System.out.println("Fin: " + fin);
                     PrintWriter writer = null;
                     try {
+                        long time = fin - init;
+                        System.out.println("Time: " + time);
                         writer = new PrintWriter(new Date().toString() + ".txt", "UTF-8");
 
                         writer.println("Cliente: 172.23.66.62" );
+
                         writer.println("Archivo: 250.rar");
                         writer.println("Fecha: " + new Date().toString());
-                        writer.println("Tiempo: " + (fin - init));
+                        writer.println("Tiempo: " + time);
                         writer.println("Paquetes: " + client.getTorrent().getPieceCount());
                         writer.println("Paquetes 2: " + client.getTorrent().getAvailablePieces().length());
                         writer.println("Paquetes recibidos: " + client.getTorrent().getCompletedPieces());
