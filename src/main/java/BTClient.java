@@ -72,8 +72,7 @@ public class BTClient {
                         writer.println("Fecha: " + new Date().toString());
                         writer.println("Tiempo: " + time);
                         writer.println("Paquetes: " + client.getTorrent().getPieceCount());
-                        writer.println("Paquetes 2: " + client.getTorrent().getAvailablePieces().length());
-                        writer.println("Paquetes recibidos: " + client.getTorrent().getCompletedPieces());
+                        writer.println("Paquetes recibidos: " + client.getTorrent().getCompletedPieces().length());
                         writer.println("Estado: " + client.getTorrent().getCompletion());
                         writer.close();
 
