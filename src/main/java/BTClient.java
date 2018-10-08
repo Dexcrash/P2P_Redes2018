@@ -10,6 +10,8 @@ import java.util.Observer;
 
 public class BTClient {
 
+    private boolean empezo = false;
+
     public BTClient() throws IOException, NoSuchAlgorithmException {
         // First, instantiate the Client object.
         Client client = new Client(
@@ -49,9 +51,9 @@ public class BTClient {
                 float progress = client.getTorrent().getCompletion();
                 // Do something with progress.
                 long init = 0;
-                if(progress >= 0) {
+                if(progress >= 0 && !empezo) {
                     init = System.currentTimeMillis();
-                    System.out.println("asd " + init);
+                    empezo = true;
                 }
                 if(progress >= 100)
                 {
