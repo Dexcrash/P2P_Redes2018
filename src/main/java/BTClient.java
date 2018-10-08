@@ -55,10 +55,9 @@ public class BTClient {
                 if(progress >= 100)
                 {
                     long fin = System.currentTimeMillis();
-                    System.out.println("Se termina de descargar en: " + (fin - init) + "\nComenzando a compartir");
                     PrintWriter writer = null;
                     try {
-                        writer = new PrintWriter("the-file-name.txt", "UTF-8");
+                        writer = new PrintWriter(new Date().toString() + ".txt", "UTF-8");
 
                         writer.println("Cliente: 172.23.66.62" );
                         writer.println("Archivo: 250.rar");
