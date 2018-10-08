@@ -1,10 +1,10 @@
 import com.turn.ttorrent.client.Client;
 import com.turn.ttorrent.client.SharedTorrent;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.net.InetAddress;
 import java.security.NoSuchAlgorithmException;
+import java.util.Date;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -38,21 +38,43 @@ public class BTClient {
 // At this point, can you either call download() to download the torrent and
 // stop immediately after...
 
-        final long init = System.currentTimeMillis();
-        System.out.println("Inicia a descargar:");
 
         client.download();
 
         client.addObserver(new Observer() {
             @Override
             public void update(Observable observable, Object data) {
+
                 Client client = (Client) observable;
                 float progress = client.getTorrent().getCompletion();
                 // Do something with progress.
+                long init = 0;
+                if(progress >= 0) {
+                    init = System.currentTimeMillis();
+                }
                 if(progress >= 100)
                 {
                     long fin = System.currentTimeMillis();
                     System.out.println("Se termina de descargar en: " + (fin - init) + "\nComenzando a compartir");
+                    PrintWriter writer = null;
+                    try {
+                        writer = new PrintWriter("the-file-name.txt", "UTF-8");
+
+                        writer.println("Cliente: 172.23.66.61" );
+                        writer.println("Archivo: 250.rar");
+                        writer.println("Fecha: " + new Date().toString());
+                        writer.println("Tiempo: " + (fin - init));
+                        writer.println("Paquetes: " + client.getTorrent().getPieceCount());
+                        writer.println("Paquetes 2: " + client.getTorrent().getAvailablePieces().length());
+                        writer.println("Paquetes recibidos: " + client.getTorrent().getCompletedPieces());
+                        writer.println("Estado: " + client.getTorrent().getCompletion());
+                        writer.close();
+
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });
