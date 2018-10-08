@@ -60,7 +60,7 @@ public class BTClient {
                     try {
                         writer = new PrintWriter("the-file-name.txt", "UTF-8");
 
-                        writer.println("Cliente: 172.23.66.61" );
+                        writer.println("Cliente: 172.23.66.62" );
                         writer.println("Archivo: 250.rar");
                         writer.println("Fecha: " + new Date().toString());
                         writer.println("Tiempo: " + (fin - init));
