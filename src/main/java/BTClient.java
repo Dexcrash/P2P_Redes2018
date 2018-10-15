@@ -20,15 +20,15 @@ public class BTClient {
                 // else than localhost here).
                 //InetAddress.getLocalHost(),
                 //InetAddress.getByAddress(new byte[]{0, 0, 0, 0}),
-                InetAddress.getByName("157.253.205.60"),
+                InetAddress.getByName("172.23.66.62"),
 
                 // Load the torrent from the torrent file and use the given
                 // output directory. Partials downloads are automatically recovered.
                 SharedTorrent.fromFile(
 				//Ruta torrent a descargar 
-                        new File("/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Client/torrent/500.torrent"),
+                        new File("/home/isis/clientes/P2P_Redes2018/out/artifacts/Client/torrent/500.torrent"),
 				//Creo que ruta donde descarga (Parametro dice 'parentDirectory'
-                        new File("/home/s6g4/servidores/P2P_Redes2018/out/artifacts/Client/torrent")));
+                        new File("/home/isis/clientes/P2P_Redes2018/out/artifacts/Client/torrent")));
 
 
 
@@ -44,7 +44,7 @@ public class BTClient {
 
         client.download();
 
-        /*client.addObserver(new Observer() {
+        client.addObserver(new Observer() {
             @Override
             public void update(Observable observable, Object data) {
 
@@ -66,7 +66,7 @@ public class BTClient {
                         System.out.println("Time: " + time);
                         writer = new PrintWriter(new Date().toString() + ".txt", "UTF-8");
 
-                        writer.println("Cliente: 172.23.66.61" );
+                        writer.println("Cliente: 172.23.66.62" );
 
                         writer.println("Archivo: 500.exe");
                         writer.println("Fecha: " + new Date().toString());
@@ -84,7 +84,7 @@ public class BTClient {
                 }
             }
         });
-*/
+
 // Or call client.share(...) with a seed time in seconds:
 
         client.share(3600);
