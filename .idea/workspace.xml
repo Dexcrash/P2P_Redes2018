@@ -146,7 +146,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/BTClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="68" column="61" selection-start-line="68" selection-start-column="61" selection-end-line="68" selection-end-column="61" />
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1692#3497#0" expanded="true" />
@@ -172,18 +172,19 @@
       <find>loca</find>
       <find>62</find>
       <find>69</find>
+      <find>66</find>
     </findStrings>
     <replaceStrings>
-      <replace>64</replace>
-      <replace>65</replace>
-      <replace>66</replace>
-      <replace>67</replace>
       <replace>68</replace>
       <replace>69</replace>
       <replace>70</replace>
       <replace>61</replace>
       <replace>62</replace>
       <replace>63</replace>
+      <replace>65</replace>
+      <replace>66</replace>
+      <replace>67</replace>
+      <replace>64</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -685,12 +686,12 @@
       <workItem from="1538682790607" duration="3599000" />
       <workItem from="1538966794127" duration="3275000" />
       <workItem from="1538999827876" duration="6150000" />
-      <workItem from="1539610161746" duration="4233000" />
+      <workItem from="1539610161746" duration="4504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40893000" />
+    <option name="totallyTimeSpent" value="41164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -814,7 +815,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/BTClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="68" column="61" selection-start-line="68" selection-start-column="61" selection-end-line="68" selection-end-column="61" />
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1692#3497#0" expanded="true" />
