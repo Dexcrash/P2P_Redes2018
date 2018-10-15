@@ -20,13 +20,13 @@ public class BTClient {
                 // else than localhost here).
                 //InetAddress.getLocalHost(),
                 //InetAddress.getByAddress(new byte[]{0, 0, 0, 0}),
-                InetAddress.getByName("172.23.66.70"),
+                InetAddress.getByName("172.23.66.61"),
 
                 // Load the torrent from the torrent file and use the given
                 // output directory. Partials downloads are automatically recovered.
                 SharedTorrent.fromFile(
 				//Ruta torrent a descargar 
-                        new File("/home/isis/clientes/P2P_Redes2018/out/artifacts/Client/torrent/250.torrent"),
+                        new File("/home/isis/clientes/P2P_Redes2018/out/artifacts/Client/torrent/500.torrent"),
 				//Creo que ruta donde descarga (Parametro dice 'parentDirectory'
                         new File("/home/isis/clientes/P2P_Redes2018/out/artifacts/Client/torrent")));
 
@@ -66,9 +66,9 @@ public class BTClient {
                         System.out.println("Time: " + time);
                         writer = new PrintWriter(new Date().toString() + ".txt", "UTF-8");
 
-                        writer.println("Cliente: 172.23.66.70" );
+                        writer.println("Cliente: 172.23.66.61" );
 
-                        writer.println("Archivo: 250.rar");
+                        writer.println("Archivo: 500.exe");
                         writer.println("Fecha: " + new Date().toString());
                         writer.println("Tiempo: " + time);
                         writer.println("Paquetes: " + client.getTorrent().getPieceCount());
