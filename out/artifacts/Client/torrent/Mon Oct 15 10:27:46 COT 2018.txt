@@ -1,0 +1,7 @@
+Cliente: 172.23.66.65
+Archivo: 250.rar
+Fecha: Mon Oct 15 10:27:46 COT 2018
+Tiempo: 13561
+Paquetes: 560
+Paquetes recibidos: 560
+Estado: 100.0

@@ -1,0 +1,7 @@
+Cliente: 172.23.66.65
+Archivo: 500.exe
+Fecha: Mon Oct 15 09:27:33 COT 2018
+Tiempo: 21110
+Paquetes: 1039
+Paquetes recibidos: 1039
+Estado: 100.0
